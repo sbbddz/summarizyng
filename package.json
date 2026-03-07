@@ -1,0 +1,35 @@
+{
+  "name": "summarizyng",
+  "version": "0.0.1",
+  "description": "Summarize",
+  "type": "module",
+  "bin": {
+    "summarizyng": "tsx src/cli.ts"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "build": "tsc",
+    "start": "tsx src/cli.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.6.0",
+    "commander": "^14.0.0",
+    "jsdom": "^28.0.0",
+    "markdansi": "^0.2.1",
+    "openai": "^4.104.0"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^28.0.0",
+    "@types/node": "^22.19.13",
+    "nock": "^14.0.11",
+    "prettier": "^3.8.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.0",
+    "vitest": "^4.0.18"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
